@@ -1,0 +1,269 @@
+{
+  "main": {
+    "id": "0fab791ecd4d6b2a",
+    "type": "split",
+    "children": [
+      {
+        "id": "0943661588c44f18",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2279463ae2acba4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "zero-point/Setup - Backend.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Setup - Backend"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0ba66b9bfecde8e7",
+    "type": "split",
+    "children": [
+      {
+        "id": "4dc6d3c2eaf3b481",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "234eb9bea340da4b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "4d99edccdf41f242",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "a15fd57270d21169",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 275.5
+  },
+  "right": {
+    "id": "6e7e6e64566c0352",
+    "type": "split",
+    "children": [
+      {
+        "id": "1f8bcdcb0ee36551",
+        "type": "tabs",
+        "dimension": 30.27777777777778,
+        "children": [
+          {
+            "id": "00b9326a2d327cd8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "f3c50fea3a5447b9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "475e0e3263a0c063",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          },
+          {
+            "id": "43a1b939e5b461a5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2421b13fa0e7553a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "1f43c84cbd0df822",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 5
+      },
+      {
+        "id": "1b8eb0be34399694",
+        "type": "tabs",
+        "dimension": 69.72222222222223,
+        "children": [
+          {
+            "id": "58447524f7f191df",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "zero-point/Setup - Backend.md",
+                "followCursor": false,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Setup - Backend"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 405.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-kanban:Criar um novo quadro": false
+    }
+  },
+  "active": "c2279463ae2acba4",
+  "lastOpenFiles": [
+    "zero-point/#README-zero-point-0.1.0.md",
+    "zero-point/Setup - Backend.md",
+    "zero-point/Setup - Backend.md",
+    "zero-point/#STRUCTURE-zero-point-0.1.0.md",
+    "zero-point/Setup - Frontend v2.md",
+    "README-0.1.0.md",
+    "STRUCTURE-0.1.0.md",
+    "zero-point/Setup - Frontend.md",
+    "`README-zero-point-0.1.0`.md",
+    "zero-point 2.md",
+    "Queries do Prisma.md",
+    "zero-point 1.md",
+    "zero-point.md",
+    "zero-point/códigos uteis/Padrão de Proteção de Rotas.md",
+    "zero-point/códigos uteis",
+    "architecture/STRUCTURE-architecture-0.1.0.md",
+    "architecture/#README-architecture-0.1.0.md",
+    "implementation/STRUCTURE-implementation-0.1.0.md",
+    "implementation/README-implementation-0.1.0.md",
+    "STRUCTURE-implementation-0.1.0.md",
+    "README-implementation-0.1.0.md",
+    "STRUCTURE-architecture-0.1.0.md",
+    "#README-architecture-0.1.0.md",
+    "STRUCTURE-zero-point-0.1.0.md",
+    "#README-zero-point-0.1.0 - Copia (5).md",
+    "#README-zero-point-0.1.0 - Copia (4).md",
+    "#README-zero-point-0.1.0 - Copia (3).md",
+    "Novo(a) Documento de Texto.txt",
+    "implementation",
+    "Nova pasta",
+    "architecture",
+    "zero-point",
+    "templates_inspiracao/02 - stitch_todolist_login_screen/screen.png",
+    "templates_inspiracao/01 - stitch_todolist_login_screen/screen.png",
+    "feature/02 - redesign tasks dashboard",
+    "templates_inspiracao/02 - stitch_todolist_login_screen/code.html",
+    "templates_inspiracao/02 - stitch_todolist_login_screen",
+    "templates_inspiracao/02 - stitch_todolist_login_screen.zip",
+    "templates_inspiracao/stitch_todolist_login_screen/screen.png",
+    "templates_inspiracao/screen.png",
+    "Sem título.canvas",
+    "Pasted image 20251230142110.png",
+    "01 - Escolas monitoradas/01 - Escolas monitoradas (01).png",
+    "teste/teste (05).png",
+    "teste/teste (04).png",
+    "teste/teste (03).png",
+    "teste/teste (02).png"
+  ]
+}

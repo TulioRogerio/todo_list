@@ -230,60 +230,33 @@ export class AuthService {
 ```typescript
 // src/auth/auth.controller.ts
 
-import { Controller, Get, Post, Body, UseGuards, Request } from '@nestjs/common';
-import { AuthGuard } from '@nestjs/passport';
-import { RolesGuard } from '../auth/guards/roles.guard';
-import { Roles, Role } from '../auth/decorators/roles.decorator';
-import { UsersService } from '../users/users.service';
-import { ReportsService } from '../reports/reports.service';
+import { Controller, Post, Body, Get, UseGuards, Request } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { LoginDto } from './dto/login.dto';
 import { RegisterDto } from './dto/register.dto';
+import { AuthGuard } from '@nestjs/passport';
 
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
 
   @Post('login')
-  async login(@Body() loginDto: LoginDto) {
-    return this.authService.login(loginDto);
+  login(@Body() dto: LoginDto) {
+    return this.authService.login(dto);
   }
 
   @Post('register')
-  async register(@Body() registerDto: RegisterDto) {
-    return this.authService.register(registerDto);
-  }
-}
-
-@UseGuards(AuthGuard('jwt'), RolesGuard)
-@Controller('admin')
-export class AdminController {
-
-  constructor(
-    private userService: UsersService,
-    private reportService: ReportsService
-  ) {}
-
-  // Apenas ADMIN pode acessar
-  @Roles(Role.ADMIN)
-  @Get('users')
-  getAllUsers() {
-    return this.userService.findAll();
+  register(@Body() dto: RegisterDto) {
+    return this.authService.register(dto);
   }
 
-  // ADMIN ou MANAGER podem acessar
-  @Roles(Role.ADMIN, Role.MANAGER)
-  @Get('reports')
-  getReports() {
-    return this.reportService.getAll();
-  }
-
-  // Qualquer usuário autenticado (sem @Roles)
+  @UseGuards(AuthGuard('jwt'))
   @Get('profile')
   getProfile(@Request() req) {
     return req.user;
   }
 }
+
 ```
 
 ## 🎯 jwt.strategy.ts — Estratégia de validação de tokens JWT
@@ -323,15 +296,11 @@ import { PrismaModule } from '../prisma/prisma.module';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { JwtStrategy } from './jwt.strategy';
-import { UsersModule } from '../users/users.module';
-import { ReportsModule } from '../reports/reports.module';
 
 @Module({
   imports: [
     PrismaModule,
     PassportModule,
-    UsersModule,
-    ReportsModule,
     JwtModule.register({
       secret: process.env.JWT_SECRET || 'secret',
       signOptions: { expiresIn: '1h' }, // Standard expiration

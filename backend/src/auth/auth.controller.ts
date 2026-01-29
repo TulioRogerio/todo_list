@@ -1,36 +1,26 @@
 // src/auth/auth.controller.ts
 
-import { Controller, Get, Post, UseGuards, Request } from '@nestjs/common';
+import { Controller, Post, Body, Get, UseGuards, Request } from '@nestjs/common';
+import { AuthService } from './auth.service';
+import { LoginDto } from './dto/login.dto';
+import { RegisterDto } from './dto/register.dto';
 import { AuthGuard } from '@nestjs/passport';
-import { RolesGuard } from '../auth/guards/roles.guard';
-import { Roles, Role } from '../auth/decorators/roles.decorator';
-import { UsersService } from '../users/users.service';
-import { ReportsService } from '../reports/reports.service';
 
-@UseGuards(AuthGuard('jwt'), RolesGuard)  // ⭐ Ambos os guards
-@Controller('admin')
+@Controller('auth')
 export class AuthController {
+  constructor(private authService: AuthService) {}
 
-  constructor(
-    private userService: UsersService,
-    private reportService: ReportsService
-  ) {}
-
-  // Apenas ADMIN pode acessar
-  @Roles(Role.ADMIN)
-  @Get('users')
-  getAllUsers() {
-    return this.userService.findAll();
+  @Post('login')
+  login(@Body() dto: LoginDto) {
+    return this.authService.login(dto);
   }
 
-  // ADMIN ou MANAGER podem acessar
-  @Roles(Role.ADMIN, Role.MANAGER)
-  @Get('reports')
-  getReports() {
-    return this.reportService.getAll();
+  @Post('register')
+  register(@Body() dto: RegisterDto) {
+    return this.authService.register(dto);
   }
 
-  // Qualquer usuário autenticado (sem @Roles)
+  @UseGuards(AuthGuard('jwt'))
   @Get('profile')
   getProfile(@Request() req) {
     return req.user;

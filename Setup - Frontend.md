@@ -1016,11 +1016,4 @@ export default App;
 ```
 
 ---
-## 🎯 Removendo erros do VS Code
 
- Se o VS Code ainda mostrar algum sublinhado vermelho, experimente reiniciar a janela do editor (Ctrl+Shift+P -> "Developer: Reload Window"), pois às vezes o servidor de linguagem demora para perceber a mudança externa na node_modules.
-
-
-##  🎯 Retornar para o Readme-zero-point
-
-> Retorne para [[README-zero-point-0.1.0]] para rodar o backend.

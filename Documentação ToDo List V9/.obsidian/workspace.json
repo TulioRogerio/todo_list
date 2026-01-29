@@ -200,8 +200,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 405.5,
-    "collapsed": true
+    "width": 405.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,15 +217,14 @@
   },
   "active": "c2279463ae2acba4",
   "lastOpenFiles": [
-    "zero-point/#README-zero-point-0.1.0.md",
+    "zero-point/Setup - Frontend.md",
+    "zero-point/README-zero-point-0.1.0.md",
+    "`README-zero-point-0.1.0`.md",
+    "zero-point/STRUCTURE-zero-point-0.1.0.md",
     "zero-point/Setup - Backend.md",
-    "zero-point/Setup - Backend.md",
-    "zero-point/#STRUCTURE-zero-point-0.1.0.md",
     "zero-point/Setup - Frontend v2.md",
     "README-0.1.0.md",
     "STRUCTURE-0.1.0.md",
-    "zero-point/Setup - Frontend.md",
-    "`README-zero-point-0.1.0`.md",
     "zero-point 2.md",
     "Queries do Prisma.md",
     "zero-point 1.md",

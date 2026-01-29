@@ -143,6 +143,7 @@ Orquestrador Single SPA que coordena os micro frontends.
 root-config/
 ├── index.html        # Página principal com lógica de roteamento
 ├── package.json      # Dependência do servidor serve
+├── package-lock.json # Lockfile das dependências
 └── .gitignore        # Ignora node_modules
 ```
 

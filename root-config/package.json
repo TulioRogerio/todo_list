@@ -1,0 +1,12 @@
+{
+  "name": "root-config",
+  "version": "1.0.0",
+  "description": "Single SPA Root Config - Orquestrador",
+  "scripts": {
+    "start": "serve -l 9000 .",
+    "dev": "serve -l 9000 ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

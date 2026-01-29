@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zero-point/Setup - Backend.md",
-                "mode": "source",
+                "file": "zero-point/README-zero-point-0.1.0.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setup - Backend"
+              "title": "README-zero-point-0.1.0"
             }
           }
         ]
@@ -187,13 +187,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zero-point/Setup - Backend.md",
+                "file": "zero-point/README-zero-point-0.1.0.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de Setup - Backend"
+              "title": "Sumário de README-zero-point-0.1.0"
             }
           }
         ]
@@ -217,11 +217,11 @@
   },
   "active": "c2279463ae2acba4",
   "lastOpenFiles": [
+    "zero-point/Setup - Backend.md",
     "zero-point/Setup - Frontend.md",
     "zero-point/README-zero-point-0.1.0.md",
     "`README-zero-point-0.1.0`.md",
     "zero-point/STRUCTURE-zero-point-0.1.0.md",
-    "zero-point/Setup - Backend.md",
     "zero-point/Setup - Frontend v2.md",
     "README-0.1.0.md",
     "STRUCTURE-0.1.0.md",

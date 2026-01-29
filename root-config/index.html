@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager - Micro Frontends</title>
+  
+  <!-- Estilos PrimeReact e PrimeFlex via CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primereact/resources/themes/lara-light-blue/theme.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primereact/resources/primereact.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeicons/primeicons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/primeflex/primeflex.css">
+  
+  <style>
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading indicator -->
+  <div id="loading" class="flex flex-column justify-content-center align-items-center min-h-screen gap-3">
+    <div class="spinner"></div>
+    <span class="text-xl">Carregando Task Manager...</span>
+  </div>
+  
+  <!-- Containers para os micro frontends -->
+  <div id="auth-app"></div>
+  <div id="tasks-app"></div>
+  
+  <script>
+    // Navegação entre apps baseada em rota
+    const path = window.location.pathname;
+    const token = localStorage.getItem('token');
+    
+    // Função de navegação global
+    window.singleSpaNavigate = function(url) {
+      window.location.href = url;
+    };
+    
+    // Lógica de roteamento
+    if (token) {
+      // Usuário autenticado → redirecionar para tasks-app
+      window.location.href = 'http://localhost:3002';
+    } else {
+      // Usuário não autenticado → redirecionar para auth-app
+      window.location.href = 'http://localhost:3001';
+    }
+    
+    // Escutar eventos de autenticação
+    window.addEventListener('auth:login', function(event) {
+      console.log('✅ Login realizado:', event.detail);
+      window.location.href = 'http://localhost:3002';
+    });
+    
+    window.addEventListener('auth:logout', function() {
+      console.log('👋 Logout realizado');
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      window.location.href = 'http://localhost:3001';
+    });
+  </script>
+</body>
+</html>
